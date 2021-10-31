@@ -88,14 +88,23 @@ button > a {
   font-family: "Poppins", sans-serif;
 }
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins" sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 20px 30px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  color: #97999b;
+  background-color: #f75454;
+  text-transform: uppercase;
+  width: 180px;
 }
 
 span {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  text-align: left;
   display: block;
   color: #f75454;
 }

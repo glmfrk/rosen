@@ -14,6 +14,9 @@
   font-size: 14px;
   margin-bottom: 34px;
 }
+.subcription-title-box .heading-title {
+  margin-bottom: 60px;
+}
 .subcription-title-box .heading-title::after {
   display: none;
 }
@@ -22,22 +25,30 @@
   justify-content: center;
 }
 .subcriptio-wrapper form input[type="email"] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   padding: 20px 30px;
   margin-right: 20px;
   border: none;
   outline: none;
   color: #97999b;
   border-radius: 50px;
-  width: 400px;
+  width: 420px;
 }
 .subcriptio-wrapper form input[type="submit"] {
+  font-family: "Poppins" sans-serif;
+  font-size: 13px;
+  font-weight: 500;
   padding: 20px 30px;
   margin-right: 20px;
   border: none;
   outline: none;
   color: #97999b;
+  background-color: #f75454;
   border-radius: 50px;
-  width: 60px;
+  text-transform: uppercase;
+  width: 180px;
 }
 #footer {
   width: 100%;
@@ -115,9 +126,12 @@
   overflow: hidden;
 }
 .footer-bottom p.coppyright {
+  display: flex;
   text-align: center;
   padding: 30px 0px;
   border-top: 1px solid #313131;
+  align-items: center;
+  justify-content: center;
 }
 .footer-bottom p.coppyright span {
   font-size: inherit;
