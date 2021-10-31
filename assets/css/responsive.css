@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+  .footer-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+  .footer-menu li {
+    margin-right: 20px;
+    padding: 10px 5px;
+  }
+}
