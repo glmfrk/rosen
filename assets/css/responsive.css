@@ -1,21 +1,27 @@
 @media (max-width: 767px) {
   .footer-menu {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: baseline;
   }
 }
 
-@media (max-width: 380px) {
-  .footer-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: baseline;
+@media (max-width: 575px) {
+  h2 {
+    font-size: 25px;
   }
+  .heading-title {
+    font-size: 25px;
+  }
+  .subcriptio-wrapper form {
+    width: 100%;
+    display: block;
+    margin: inherit;
+  }
+
   .footer-menu li {
+    width: 100%;
+    display: block;
     margin-right: 20px;
     padding: 10px 5px;
+    text-align: center;
   }
 }

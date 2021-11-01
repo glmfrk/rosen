@@ -1,3 +1,94 @@
+/*==================
+LATEST BLOG SECTION  STYLES
+=============================== */
+.blog-section {
+  background: #ffffff;
+}
+
+.thamnail-block {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+  position: relative;
+}
+.thamnail-block .iteam-blog-01 {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
+}
+
+.thamnail-block .iteam-blog-01 .blog-content {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -150px;
+  z-index: 3;
+  display: block;
+  background: #ffffff;
+}
+.thamnail-block .iteam-blog-01 .v2-box {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -131px;
+  z-index: 3;
+  display: block;
+  background: #ffffff;
+}
+
+.thamnail-block .iteam-blog-01 .blog-content .content-wrapper {
+  width: 100%;
+  height: auto;
+  max-width: 495px;
+  padding: 34px 40px;
+}
+
+.thamnail-block .iteam-blog-01 .blog-content .v2 {
+  padding: 25px 20px;
+  width: 100%;
+  max-width: 245px;
+  box-shadow: 0px 6px 47px #e7e7e7;
+}
+
+.thamnail-block .iteam-blog-01 .blog-content .v2 h4 {
+  margin: 19px 0px 16px;
+}
+
+.thamnail-block .iteam-blog-01 .blog-content p#sub-heading {
+  color: #797a7b;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.thamnail-block .iteam-blog-01 .blog-content p#sub-heading .date {
+  color: #1a1a1a;
+}
+
+.thamnail-block .iteam-blog-01 .blog-content h3 {
+  color: #1a1a1a;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.blog-content .comments-link {
+  padding-left: 0;
+}
+.blog-content .comments-link li {
+  display: inline-block;
+}
+.blog-content .comments-link li a {
+  color: #797a7b;
+  font-size: 13px;
+}
+.blog-content .comments-link li i {
+  padding-right: 8px;
+}
+
+/*==================
+LATEST BLOG SECTION  END
+=============================== */
+
+/* EMAIL SUBCRIPTION SECTION START */
 .subcription-section {
   display: block;
   overflow: hidden;
@@ -20,36 +111,42 @@
 .subcription-title-box .heading-title::after {
   display: none;
 }
+
 .subcriptio-wrapper form {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  max-width: 615px;
+  text-align: center;
 }
 .subcriptio-wrapper form input[type="email"] {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  padding: 20px 30px;
-  margin-right: 20px;
+
+  margin-right: 15px;
   border: none;
   outline: none;
   color: #97999b;
   border-radius: 50px;
-  width: 420px;
+  width: 100%;
 }
 .subcriptio-wrapper form input[type="submit"] {
   font-family: "Poppins" sans-serif;
   font-size: 13px;
   font-weight: 500;
-  padding: 20px 30px;
-  margin-right: 20px;
   border: none;
   outline: none;
   color: #ffffff;
   background-color: #f75454;
   border-radius: 50px;
   text-transform: uppercase;
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
 }
+/* EMAIL SUBCRIPTION SECTION  END */
+
+/* FOOTER SECTION  STYLES */
 #footer {
   width: 100%;
   height: 100%;
@@ -73,23 +170,22 @@
 }
 .footer-menu {
   width: 100%;
-  display: flex;
   padding: 70px 0px;
   list-style: none;
-  justify-content: center;
+  text-align: center;
 }
 .footer-menu li {
   display: inline-block;
-  margin-right: 60px;
+  text-align: center;
+  margin: 0 auto;
 }
-.footer-menu li:last-child {
-  margin-right: 0;
-}
+
 .footer-menu li a {
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  padding-right: 60px;
   text-transform: capitalize;
   transition: all 0.3s ease;
 }
@@ -119,6 +215,7 @@
   background-color: #ee5542;
   transform: rotate(360deg);
 }
+/* FOOTER BOTTOM SECTION STYLES */
 .footer-bottom {
   width: 100%;
   height: auto;
@@ -126,12 +223,9 @@
   overflow: hidden;
 }
 .footer-bottom p.coppyright {
-  display: flex;
   text-align: center;
   padding: 30px 0px;
   border-top: 1px solid #313131;
-  align-items: center;
-  justify-content: center;
 }
 .footer-bottom p.coppyright span {
   font-size: inherit;
