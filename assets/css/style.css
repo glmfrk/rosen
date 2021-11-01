@@ -47,6 +47,9 @@ LATEST BLOG SECTION  STYLES
   padding: 25px 20px;
   width: 100%;
   max-width: 245px;
+  transition: 04s linear;
+}
+.thamnail-block:hover .iteam-blog-01 .blog-content .v2 {
   box-shadow: 0px 6px 47px #e7e7e7;
 }
 
