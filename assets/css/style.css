@@ -1,4 +1,159 @@
 /*==================
+EDITOR PICKS SECTION  STYLES
+=============================== */
+.editor-section {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+.editor-wrapper {
+  margin-bottom: 150px;
+}
+.editor-wrapper .picks {
+  margin-top: 30px;
+}
+
+.editor-wrapper .iteam-contents {
+  width: 93%;
+  max-width: 546px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-bottom: 38px;
+  bottom: 0;
+}
+.editor-wrapper .iteam-contentss {
+  width: 100%;
+}
+.editor-wrapper .iteam-contentss h4 {
+  padding: 25px 0px;
+}
+.editor-wrapper .iteam-contentss p {
+  color: #666666;
+  line-height: 30px;
+  font-size: 15px;
+  padding-right: 50px;
+  max-width: 93%;
+}
+.editor-wrapper .middle-picks {
+  padding-top: 49px;
+  padding-bottom: 79px;
+}
+.editor-wrapper .right-picks {
+  padding-top: 74px;
+  padding-bottom: 44px;
+}
+.editor-wrapper .iteam-contents h3 {
+  color: #1a1a1a;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.banner-ads {
+  color: #797a7b;
+  background: #f7f7f7;
+  font-weight: 600;
+  padding: 70px 0px;
+}
+
+/*==================
+EDITOR PICKS SECTION  STYLES END
+=============================== */
+
+/*==================
+FEATURID BLOG SECTION  STYLES
+=============================== */
+.featured-section {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+.featured-wrapper {
+  padding-bottom: 150px;
+}
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+.featured-wrapper .iteam-contents {
+  max-width: 330px;
+  padding: 30px 20px 30px 30px;
+}
+/*==================
+FEATURIED SECTION  STYLES END
+=============================== */
+
+/*==================
+FASHION BLOG SECTION  STYLES
+=============================== */
+.fashion-section {
+  padding-top: 100px;
+  padding-bottom: 82px;
+}
+.fashion-wrapper {
+  padding-bottom: 150px;
+}
+.fashion-wrapper .iteam-contents {
+  max-width: 330px;
+  padding: 30px 20px 30px 30px;
+  /* padding-bottom: 0; */
+}
+/*==================
+FASHION BLOG SECTION  STYLES END
+=============================== */
+/*==================
+TRAVEL BLOG SECTION  STYLES
+=============================== */
+.travel-section {
+  background: #fdf8f5;
+  padding: 100px 0;
+}
+.travel-blog-wrapper .iteam-blog-01 {
+  position: relative;
+  margin-bottom: 150px;
+}
+.travel-blog-wrapper .iteam-blog-01 .travel-image {
+  position: relative;
+}
+.travel-blog-wrapper .iteam-blog-01 .travel-content {
+  background: #fff;
+  /* padding: 30px 0px 30px 20px; */
+  position: absolute;
+  bottom: -168px;
+  right: 0;
+  width: 93%;
+  height: auto;
+  max-width: 100%;
+  padding: 48px 0px 50px 40px;
+  transition: 0.3s linear;
+  z-index: 999;
+}
+.travel-blog-wrapper .iteam-blog-01:hover .travel-content {
+  box-shadow: 0px 8px 30px rgb(15 50 63 / 6%);
+}
+.travel-blog-wrapper .iteam-blog-01 .travel-content span.date {
+  color: #797a7b;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.travel-blog-wrapper .iteam-blog-01 .travel-content h3 {
+  color: #1a1a1a;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* TRAVELS RIGHT BLOGS  */
+.travel-right-blog {
+  margin-bottom: 40px;
+}
+.travel-right-blog .iteam-content {
+  margin-left: 30px;
+}
+.travel-right-blog .iteam-content h4 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+/*==================
+TRAVEL BLOG SECTION  STYLES END
+=============================== */
+
+/*==================
 LATEST BLOG SECTION  STYLES
 =============================== */
 .blog-section {
