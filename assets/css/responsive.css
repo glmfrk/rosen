@@ -1,4 +1,26 @@
+@media (max-width: 991px) {
+  .thamnail-block .iteam-blog-01 {
+    position: relative;
+    margin-bottom: 180px;
+  }
+  .thamnail-block .iteam-blog-01 .iteam-blog-content {
+    bottom: -168px;
+  }
+  .thamnail-block .iteam-blog-01 .right-content {
+    bottom: -125px;
+  }
+}
 @media (max-width: 767px) {
+  /* .thamnail-block .iteam-blog-01 {
+    position: relative;
+    margin-bottom: 220px;
+  }
+  .thamnail-block .iteam-blog-01 .iteam-blog-content {
+    bottom: -200px;
+  }
+  .thamnail-block .iteam-blog-01 .right-content {
+    bottom: -90px;
+  } */
   .footer-menu {
     width: 100%;
   }
@@ -7,6 +29,12 @@
 @media (max-width: 575px) {
   h2 {
     font-size: 25px;
+  }
+  .thamnail-block .iteam-blog-01 .iteam-blog-content {
+    bottom: -90%;
+  }
+  .thamnail-block .iteam-blog-01 .right-content {
+    bottom: -90%;
   }
   .heading-title {
     font-size: 25px;
