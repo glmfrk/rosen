@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css" />
 
     <!-- CUSTOM CSS FILES  -->
     <link rel="stylesheet" href="./assets/css/typography.css" />
@@ -44,24 +45,97 @@
   </head>
   <body>
     <header id="headeer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="header-top px-5 text-center">
+      <div class="header-top-section">
+        <div class="container">
+          <div class="row">
+            <div class="header-top-contents">
+              <p class="breaking-news">breaking news:</p>
               <p>
-                <span class="breaking-news">Breaking News:</span> Uganda
-                security forces withdraw from Bobi Wine's home ending 11 days of
-                house arrest !
-                <span class="read-more"
-                  >read more <i class="fas fa-arrow-right"></i
-                ></span>
+                Uganda security forces withdraw from Bobi Wine's home ending 11
+                days of house arrest !
+              </p>
+              <p class="read-more-btn">
+                <a href="#">read more <i class="fas fa-arrow-right"></i></a>
               </p>
             </div>
           </div>
         </div>
-        <div class="row"></div>
-        <div class="row"></div>
       </div>
+      <div class="header-middle-section">
+        <div class="container">
+          <div class="row align-iteams-center">
+            <div class="col-lg-3">
+              <div class="header-social-icon">
+                <a class="#" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="logo d-lg-block d-none">
+                <a href="#"
+                  ><img src="./assets/images/logo/logo.png" alt="rosen-logo"
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="search-bar d-flex align-iteams-center">
+                <div class="search-icon-bar">
+                  <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="search-btn">
+                  <a href="#" class="btn btn-outline-danger">subscribe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="menu-section">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-menu">
+          <div class="container">
+            <div class="logo d-lg-none d-block">
+              <a href="./home.html">
+                <img src="./assets/images/logo/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="collapse main-nav navbar-collapse">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a href="./home.html" class="active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Video</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./single-post.html">Pages </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Fashion </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Latest News </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler">
+              <span class="navbar-toggler-icons">
+                <i class="ti-menu"></i>
+              </span>
+            </button>
+          </div>
+        </nav>
+      </section>
     </header>
 
     <!-- BANNER SECTION START -->
@@ -129,38 +203,61 @@
         </div>
       </div>
     </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- BANNER BOTTOM SECTION START -->
     <section class="banner-bottom-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6">
-            <div class="row">
-              <div class="col-lg-6 col-lg-6">
-                <div class="left-content">
-                  <img src="./assets/images/banner-bottom/1.png" alt="" />
+            <div
+              class="banner-iteam-blocks-wrapper d-flex justify-content-center"
+            >
+              <img src="./assets/images/banner-bottom/1.png" alt="" />
+              <div class="left-content">
+                <span class="sub-heading">birthday element</span>
+                <div>
+                  Rhoncus nece risuse lectus the convallis varius do consequat
+                  feugiat to dolor
                 </div>
+                <p><span class="date">jan 26 .</span> By daniel ford</p>
               </div>
-              <div class="col-lg-6 col-lg-6">
-                <div class="left-content">
-                  <span class="sub-heading">birthday element</span>
-                  <div>
-                    Rhoncus nece risuse lectus the convallis varius do consequat
-                    feugiat to dolor
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="element-wrapper">
+              <div class="overlay-img">
+                <img src="./assets/images/banner-bottom/2.png" alt="" />
+                <div class="element-content element-overlay text-left">
+                  <div class="overlay-content">
+                    <h5>LifeStyle</h5>
+                    <h4>
+                      <a href="#"> Rhoncus nullam libero mellent mattis </a>
+                    </h4>
                   </div>
-                  <p><span class="date">jan 26 .</span> By daniel ford</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <img src="./assets/images/banner-bottom/2.png" alt="">
-          </div>
-          <div class="col-lg-3">
-            <img src="./assets/images/banner-bottom/3.png" alt="">
+          <div class="col-lg-3 col-md-6">
+            <div class="element-wrapper">
+              <div class="overlay-img">
+                <img src="./assets/images/banner-bottom/3.png" alt="" />
+                <div class="element-content element-overlay text-left">
+                  <div class="overlay-content">
+                    <h5>LifeStyle</h5>
+                    <h4>
+                      <a href="#"> Rhoncus nullam libero mellent mattis </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- BANNER SECTION END -->
+    <!-- BANNER BOTTOM SECTION END -->
 
     <!-- EDITOR PICKS SECTION START -->
     <section id="editor-picks" class="editor-section">
@@ -817,6 +914,7 @@
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/jquery.fancybox.min.js"></script>
     <!-- CUSTOM JS FILES  -->
     <script src="./assets/js/script.js"></script>
   </body>

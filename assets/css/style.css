@@ -1,4 +1,161 @@
 /*==================
+HEADER TOP ROW SECTION  STYLES
+=============================== */
+.header-top-section {
+  background: #212224;
+  padding: 15px 0px;
+}
+.header-top-contents {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-family: "Josefin Sans";
+}
+.header-top-contents .breaking-news {
+  color: #ff3c44;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.header-top-contents p {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.header-top-contents p.read-more-btn a {
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 20px;
+  text-transform: capitalize;
+  transition: 0.3s linear;
+}
+.header-top-contents p.read-more-btn:hover a {
+  color: #ff3c44;
+}
+.header-top-contents p.read-more-btn a i {
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 5px;
+  color: inherit;
+}
+.header-top-contents p.read-more-btn:hover a i {
+  color: #ff3c44;
+}
+.header-top-contents p.read-more-btn {
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: 0.3s linear;
+}
+/* HEADER MIDDLE SECTION STYLES  */
+.header-middle-section {
+  padding: 25px 0px;
+  border-bottom: 1px solid #e5e8ea;
+}
+.header-social-icon a {
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #fbf1f2;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  text-align: center;
+  transition: 0.3s linear;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.header-social-icon a i {
+  font-size: inherit;
+  color: inherit;
+  text-align: inherit;
+}
+.header-social-icon a:hover {
+  color: #ffffff;
+  background-color: #ff3c44;
+}
+.header-social-icon a.active {
+  color: #ffffff;
+  background-color: #ff3c44;
+}
+.header-middle-section .logo {
+  margin-top: 5px;
+}
+.header-middle-section .logo a,
+.header-middle-section .logo img {
+  display: flex;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar .search-icon-bar a {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: 300;
+  color: #1a1a1a;
+  background: #fbf1f2;
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s linear;
+}
+
+.search-bar .search-icon-bar a:hover {
+  color: #ffffff;
+  background: #ee5542;
+}
+.search-bar .search-btn a {
+  width: 150px;
+  height: 45px;
+  display: block;
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2.2;
+  text-transform: capitalize;
+}
+
+/* HEADER MAIN MENU  */
+.menu-section {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  padding: 20px 0px;
+  background: #fff;
+  position: relative;
+  width: 100%;
+  padding: 20px 0px;
+}
+.menu-section .navbar .nav-item a {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 60px;
+  transition: 0.3s linear;
+}
+.menu-section .navbar .nav-item a:hover {
+  color: #f75454;
+}
+
+/*==================
+HEADER TOP ROW SECTION  STYLES END
+=============================== */
+
+/*==================
 EDITOR PICKS SECTION  STYLES
 =============================== */
 .editor-section {
