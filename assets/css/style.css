@@ -116,7 +116,7 @@ HEADER TOP ROW SECTION  STYLES
   color: #ffffff;
   background: #ee5542;
 }
-.search-bar .search-btn a {
+.search-bar .search-btn .btn-color {
   width: 150px;
   height: 45px;
   display: block;
@@ -124,7 +124,14 @@ HEADER TOP ROW SECTION  STYLES
   font-size: 15px;
   font-weight: 600;
   line-height: 2.2;
+  color: #ffffff;
+  background-color: #f75454;
   text-transform: capitalize;
+}
+.search-bar .search-btn .btn-color:hover {
+  color: #f75454;
+  border: 1px solid #f75454;
+  background-color: #ffffff;
 }
 
 /* HEADER MAIN MENU  */
@@ -156,6 +163,164 @@ HEADER TOP ROW SECTION  STYLES END
 =============================== */
 
 /*==================
+BANNER SECTION  STYLES 
+=============================== */
+.banner-wrapper .iteam-contents {
+  padding: 40px;
+  padding-right: 0;
+  width: calc(100% - 330px);
+  margin-top: -236px;
+}
+.banner-wrapper .iteam-contents h3 {
+  padding: 22px 0px;
+}
+.banner-wrapper .iteam-contents p {
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.banner-wrapper .iteam-contents .man {
+  color: #1a1a1a;
+}
+
+.banner-section .banner-card {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  display: block;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(black, 0.5);
+}
+.banner-section .banner-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(black, 0.6); */
+  z-index: 2;
+  transition: 0.5s linear;
+  opacity: 0;
+}
+
+.banner-section .banner-card img {
+  width: 100%;
+  height: auto;
+}
+.banner-section .banner-card .middle-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 0.5s;
+  padding: 50% 0;
+}
+.banner-card:hover::before {
+  opacity: 1;
+}
+.banner-card:hover .middle-content {
+  opacity: 1;
+  background: #514c4a80;
+}
+
+.banner-section .middle-content p,
+.banner-section .middle-content span {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner-section .middle-content h3 {
+  color: #ffffff;
+  padding: 22px 0;
+  padding-left: 40px;
+}
+/*==================
+BANNER SECTION  STYLES  END
+=============================== */
+
+/*==================
+ BANNER BOTTOM SECTION STYLES
+ ============================== */
+.banner-iteam-blocks-wrapper {
+  border: 10px solid #e3e7eb;
+  height: 97%;
+}
+.banner-iteam-blocks-wrapper img {
+  width: 50%;
+  height: auto;
+}
+.banner-iteam-blocks-wrapper .content-wish {
+  width: 50%;
+  height: auto;
+}
+.banner-iteam-blocks-wrapper .content-wish {
+  padding: 60px 0;
+}
+.banner-iteam-blocks-wrapper .content-wish .sub-heading {
+  padding-left: 24px;
+}
+.banner-iteam-blocks-wrapper .content-wish .description {
+  font-size: 24px;
+  padding: 25px 38px 30px 26px;
+}
+.banner-iteam-blocks-wrapper .content-wish p.meta-box {
+  display: inline-block;
+  padding-left: 26px;
+}
+.banner-iteam-blocks-wrapper .content-wish p.meta-box span {
+  text-transform: uppercase;
+}
+.content-wish p.meta-box span.man {
+  color: #1a1a1a;
+}
+.banner-single-element {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.banner-single-element .overlay-img {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+/* .banner-single-element .overlay-img img {
+  width: inherit;
+  height: 100%;
+  display: block;
+} */
+
+.banner-single-element .overlay-content {
+  position: relative;
+  padding: 30px;
+  margin-top: -150px;
+  z-index: 3;
+}
+.banner-single-element .overlay-content span.sub-heading {
+  color: #ffffff;
+}
+.banner-single-element .overlay-content h4 a {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 20px;
+  transition: 0.5s linear;
+}
+.banner-single-element .overlay-content h4:hover a {
+  color: #1a1a1a;
+}
+/*======================
+BANNER BOTTOM SECTION STYLES END 
+================================*/
+/*==================
 EDITOR PICKS SECTION  STYLES
 =============================== */
 .editor-section {
@@ -163,19 +328,27 @@ EDITOR PICKS SECTION  STYLES
   padding-bottom: 0;
 }
 .editor-wrapper {
-  margin-bottom: 150px;
-}
-.editor-wrapper .picks {
-  margin-top: 30px;
+  margin-bottom: 80px;
 }
 
-.editor-wrapper .iteam-contents {
-  width: 93%;
-  max-width: 546px;
-  padding-top: 40px;
-  padding-left: 30px;
-  padding-bottom: 38px;
-  bottom: 0;
+.editor-wrapper .iteam-blog-content {
+  width: calc(100% - 90px);
+  padding: 40px 30px;
+  margin-top: -219px;
+}
+.editor-wrapper .iteam-blog-content h3 {
+  color: #1a1a1a;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.editor-wrapper .iteam-blog-content p.meta {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.editor-wrapper .iteam-blog-content p.meta .editor {
+  color: #1a1a1a;
+  display: inline-block;
+  font-size: inherit;
 }
 .editor-wrapper .iteam-contentss {
   width: 100%;
@@ -198,11 +371,7 @@ EDITOR PICKS SECTION  STYLES
   padding-top: 74px;
   padding-bottom: 44px;
 }
-.editor-wrapper .iteam-contents h3 {
-  color: #1a1a1a;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
+
 .banner-ads {
   color: #797a7b;
   background: #f7f7f7;
@@ -221,9 +390,7 @@ FEATURID BLOG SECTION  STYLES
   padding-top: 100px;
   padding-bottom: 0;
 }
-.featured-wrapper {
-  padding-bottom: 150px;
-}
+
 .owl-carousel .owl-stage-outer {
   overflow: visible;
 }
@@ -239,16 +406,12 @@ FEATURIED SECTION  STYLES END
 FASHION BLOG SECTION  STYLES
 =============================== */
 .fashion-section {
-  padding-top: 100px;
-  padding-bottom: 82px;
+  padding: 100px 0;
 }
-.fashion-wrapper {
-  padding-bottom: 150px;
-}
+
 .fashion-wrapper .iteam-contents {
-  max-width: 330px;
-  padding: 30px 20px 30px 30px;
-  /* padding-bottom: 0; */
+  padding: 30px 0px 30px 30px;
+  margin-top: -45px;
 }
 /*==================
 FASHION BLOG SECTION  STYLES END
@@ -258,7 +421,8 @@ TRAVEL BLOG SECTION  STYLES
 =============================== */
 .travel-section {
   background: #fdf8f5;
-  padding: 100px 0;
+  margin-bottom: -50px;
+  padding-top: 100px;
 }
 .travel-blog-wrapper .iteam-blog-01 {
   position: relative;
@@ -268,17 +432,7 @@ TRAVEL BLOG SECTION  STYLES
   position: relative;
 }
 .travel-blog-wrapper .iteam-blog-01 .travel-content {
-  background: #fff;
-  /* padding: 30px 0px 30px 20px; */
-  position: absolute;
-  bottom: -168px;
-  right: 0;
-  width: 93%;
-  height: auto;
-  max-width: 100%;
   padding: 48px 0px 50px 40px;
-  transition: 0.3s linear;
-  z-index: 999;
 }
 .travel-blog-wrapper .iteam-blog-01:hover .travel-content {
   box-shadow: 0px 8px 30px rgb(15 50 63 / 6%);
@@ -315,20 +469,20 @@ LATEST BLOG SECTION  STYLES
 =============================== */
 .blog-section {
   background: #ffffff;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .thamnail-block .iteam-blog-01 {
   position: relative;
-  margin-bottom: 150px;
+  /* margin-bottom: 30px; */
 }
 .thamnail-block .iteam-blog-01 .iteam-imgage {
   position: relative;
 }
 
 .thamnail-block .iteam-blog-01 .iteam-blog-content {
-  background: #fff;
-  /* padding: 30px 0px 30px 20px; */
+  /* background: #fff;
+  padding: 30px 0px 30px 20px;
   position: absolute;
   bottom: -168px;
   right: 0;
@@ -337,7 +491,7 @@ LATEST BLOG SECTION  STYLES
   max-width: 100%;
   padding: 34px 40px;
   transition: 0.3s linear;
-  z-index: 999;
+  z-index: 999; */
 }
 .thamnail-block .iteam-blog-01:hover .iteam-blog-content {
   box-shadow: 0px 8px 30px rgb(15 50 63 / 6%);
@@ -355,6 +509,7 @@ LATEST BLOG SECTION  STYLES
   color: #1a1a1a;
   margin-top: 15px;
   margin-bottom: 20px;
+  width: calc(100% - 61px);
 }
 .iteam-blog-content .comments-link {
   padding-left: 0;
@@ -369,20 +524,18 @@ LATEST BLOG SECTION  STYLES
 .iteam-blog-content .comments-link li i {
   padding-right: 8px;
 }
-.thamnail-block .iteam-blog-01 .right-content {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: -131px;
+/* .thamnail-block .iteam-blog-01 .right-content {
+  position: relative;
   z-index: 3;
   display: block;
   background: #ffffff;
-  padding: 25px 20px;
-  width: 93%;
-  height: auto;
-  max-width: 100%;
+  padding: 27px;
+  padding-right: 0;
+  margin-top: -40px;
+  margin-left: auto;
   transition: 0.4s linear;
-}
+  width: calc(100% - 20px);
+} */
 .thamnail-block .iteam-blog-01 .right-content h4 {
   margin: 19px 0px 16px;
 }
