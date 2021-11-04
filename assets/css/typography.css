@@ -29,6 +29,7 @@ h6 {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 0;
+  transition: 0.4s linear;
 }
 h1,
 h2,
@@ -137,6 +138,7 @@ a {
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
+  transition: 0.4s linear;
 }
 img {
   width: 100%;
