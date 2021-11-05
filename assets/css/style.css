@@ -319,15 +319,15 @@ section#banner .banner-wrapper {
 }
 
 .banner-column-left .iteam-contents {
+  position: relative;
   padding: 40px;
   padding-right: 0;
-  width: calc(100% - 330px);
-  margin-top: -236px;
-}
-@media (max-width: 1199.98px) {
-  .banner-column-left .iteam-contents {
-    width: calc(100% - 240px);
-  }
+  width: calc(100% - 39.268%);
+  max-width: 515px;
+  margin-top: 0px;
+  bottom: 0;
+  right: 0;
+  top: -236px;
 }
 .banner-column-left .iteam-contents h3 {
   padding: 22px 0px;
@@ -409,15 +409,20 @@ section#banner .banner-wrapper {
 /* BANNER RIGHT SIDE  */
 .banner-column-right .banner-right {
   position: relative;
-  margin-bottom: 30px;
+}
+.right-box-v2 {
+  margin-bottom: 0 !important;
+  margin-inline-end: auto;
+  margin-top: 30px;
 }
 .banner-column-right .banner-right .iteam-contents {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   padding: 27px;
-  width: 100%;
-  max-width: 345px;
-  margin-top: -140px;
+  width: calc(100% - 136px);
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .banner-column-right .banner-right:hover .iteam-contents {
   box-shadow: 0px 8px 30px rgb(15 50 63 / 6%);
@@ -433,8 +438,12 @@ BANNER SECTION  STYLES  END
  BANNER BOTTOM SECTION STYLES
  ============================== */
 .banner-iteam-blocks-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   border: 10px solid #e3e7eb;
   height: 97%;
+  margin-bottom: 20px;
 }
 .banner-iteam-blocks-wrapper img {
   width: 50%;
@@ -445,23 +454,33 @@ BANNER SECTION  STYLES  END
   height: auto;
 }
 .banner-iteam-blocks-wrapper .content-wish {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 .banner-iteam-blocks-wrapper .content-wish .sub-heading {
   padding-left: 24px;
 }
-.banner-iteam-blocks-wrapper .content-wish .description {
+.banner-iteam-blocks-wrapper .content-wish h4 {
   font-size: 24px;
   padding: 25px 38px 30px 26px;
+  color: #ffffff;
+}
+.banner-iteam-blocks-wrapper .content-wish h4:hover a {
+  color: #f75454;
 }
 .banner-iteam-blocks-wrapper .content-wish p.meta-box {
+  color: #fff;
   display: inline-block;
   padding-left: 26px;
 }
-.banner-iteam-blocks-wrapper .content-wish p.meta-box span {
+.banner-iteam-blocks-wrapper .content-wish p.meta-box a {
+  color: #1a1a1a;
   text-transform: uppercase;
 }
-.content-wish p.meta-box span.man {
+.banner-iteam-blocks-wrapper .content-wish p.meta-box:hover a {
+  color: #f75454;
+  text-transform: uppercase;
+}
+.content-wish p.meta-box a.man {
   color: #1a1a1a;
 }
 .banner-single-element {
@@ -511,11 +530,17 @@ EDITOR PICKS SECTION  STYLES
 .editor-wrapper {
   margin-bottom: 80px;
 }
-
+.big-pic {
+  box-sizing: border-box;
+}
+.picks {
+  margin-top: 20px;
+}
 .editor-wrapper .iteam-blog-content {
   width: calc(100% - 90px);
   padding: 40px 30px;
-  margin-top: -219px;
+  /* margin-top: -219px; */
+  margin-top: -212px;
 }
 .editor-wrapper .iteam-blog-content h3 {
   color: #1a1a1a;
@@ -586,8 +611,18 @@ FASHION BLOG SECTION  STYLES
 }
 
 .fashion-wrapper .iteam-contents {
-  padding: 30px 0px 30px 30px;
+  max-width: 333px;
+  max-height: 180px;
+  padding: 29px 0px 30px 30px;
   margin-top: -45px;
+}
+.fashion-wrapper .iteam-contents h4 a {
+  padding: 27px 0px;
+  color: #1a1a1a;
+  transition: 0.4s linear;
+}
+.fashion-wrapper .iteam-contents h4:hover a {
+  color: #f75454;
 }
 /*==================
 FASHION BLOG SECTION  STYLES END
