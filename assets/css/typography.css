@@ -189,6 +189,7 @@ span.date {
 }
 .comments-link {
   padding-left: 0;
+  margin-bottom: 0;
 }
 .comments-link li {
   display: inline-block;

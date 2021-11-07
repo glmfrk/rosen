@@ -135,23 +135,6 @@ HEADER TOP ROW SECTION  STYLES
   background: #ee5542;
 }
 
-/* .search-bar .search-icon-bar a {
-  font-family: "Josefin Sans";
-  font-size: 14px;
-  font-weight: 300;
-  color: #1a1a1a;
-  background: #fbf1f2;
-  height: 45px;
-  width: 45px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s linear;
-}
-
- */
-
 /* HEADER SEARCH POPUP FORM  */
 
 .header-search-wrapper .search-bar .search-popup {
@@ -308,6 +291,7 @@ section#banner .banner-wrapper {
 .banner-column-left {
   flex-basis: 100%;
   max-width: 44.27%;
+  position: relative;
 }
 .banner-column-middle {
   flex-basis: 100%;
@@ -317,17 +301,15 @@ section#banner .banner-wrapper {
   flex-basis: 100%;
   max-width: 23.697%;
 }
-
-.banner-column-left .iteam-contents {
+.iteam-image {
   position: relative;
+}
+.banner-column-left .iteam-contents {
+  position: absolute;
   padding: 40px;
-  padding-right: 0;
   width: calc(100% - 39.268%);
-  max-width: 515px;
-  margin-top: 0px;
   bottom: 0;
   right: 0;
-  top: -236px;
 }
 .banner-column-left .iteam-contents h3 {
   padding: 22px 0px;
@@ -439,11 +421,8 @@ BANNER SECTION  STYLES  END
  ============================== */
 .banner-iteam-blocks-wrapper {
   display: flex;
-  align-items: baseline;
   justify-content: center;
   border: 10px solid #e3e7eb;
-  height: 97%;
-  margin-bottom: 20px;
 }
 .banner-iteam-blocks-wrapper img {
   width: 50%;
@@ -462,7 +441,6 @@ BANNER SECTION  STYLES  END
 .banner-iteam-blocks-wrapper .content-wish h4 {
   font-size: 24px;
   padding: 25px 38px 30px 26px;
-  color: #ffffff;
 }
 .banner-iteam-blocks-wrapper .content-wish h4:hover a {
   color: #f75454;
@@ -493,17 +471,12 @@ BANNER SECTION  STYLES  END
   display: block;
   z-index: 1;
 }
-/* .banner-single-element .overlay-img img {
-  width: inherit;
-  height: 100%;
-  display: block;
-} */
 
 .banner-single-element .overlay-content {
-  position: relative;
-  padding: 30px;
-  margin-top: -150px;
+  position: absolute;
   z-index: 3;
+  bottom: 0;
+  padding: 30px;
 }
 .banner-single-element .overlay-content span.sub-heading {
   color: #ffffff;
@@ -593,11 +566,16 @@ FEATURID BLOG SECTION  STYLES
 .featured-section {
   padding-top: 100px;
   padding-bottom: 0;
+  overflow: hidden;
 }
 
 .featured-wrapper .iteam-contents {
-  /* max-width: 330px; */
-  padding: 30px 20px 30px 30px;
+  padding: 30px;
+  padding-right: 0;
+}
+.featured-wrapper .iteam-contents h4 {
+  padding-top: 19px;
+  padding-bottom: 30px;
 }
 /*==================
 FEATURIED SECTION  STYLES END
@@ -611,8 +589,6 @@ FASHION BLOG SECTION  STYLES
 }
 
 .fashion-wrapper .iteam-contents {
-  max-width: 333px;
-  max-height: 180px;
   padding: 29px 0px 30px 30px;
   margin-top: -45px;
 }
@@ -632,7 +608,6 @@ TRAVEL BLOG SECTION  STYLES
 =============================== */
 .travel-section {
   background: #fdf8f5;
-  margin-bottom: -50px;
   padding-top: 100px;
 }
 .travel-blog-wrapper .iteam-blog-01 {
@@ -643,6 +618,8 @@ TRAVEL BLOG SECTION  STYLES
   position: relative;
 }
 .travel-blog-wrapper .iteam-blog-01 .travel-content {
+  position: absolute;
+  right: 0;
   padding: 48px 0px 50px 40px;
 }
 .travel-blog-wrapper .iteam-blog-01:hover .travel-content {
@@ -666,7 +643,7 @@ TRAVEL BLOG SECTION  STYLES
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .travel-right-blog .iteam-image {
   flex-basis: 100%;
@@ -680,12 +657,20 @@ TRAVEL BLOG SECTION  STYLES
   position: relative;
   z-index: 1;
 }
-.travel-right-blog .fancy-video .video-btn {
+.video-icon {
+  width: 100%;
+  height: 100%;
+  background: #00000059;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fancy-video .video-btn {
   position: absolute;
   z-index: 3;
   display: block;
-  top: 0;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   width: 100%;
   height: 100%;
   max-width: 36px;
@@ -694,9 +679,12 @@ TRAVEL BLOG SECTION  STYLES
   border: 1px solid #fff;
   border-radius: 50px;
   text-align: center;
-  margin: 76px auto;
+  -webkit-animation: beat 1s infinite;
+  -moz-animation: beat 1s infinite;
+  -o-animation: beat 1s infinite;
+  animation: beat 1s infinite;
 }
-.travel-right-blog .fancy-video .video-btn i {
+.fancy-video .video-btn i {
   font-size: 13px;
   color: #fff;
   text-align: center;
@@ -707,6 +695,27 @@ TRAVEL BLOG SECTION  STYLES
 .travel-right-blog .iteam-content h4 {
   margin-top: 20px;
   margin-bottom: 25px;
+}
+.travel-blog-wrapper .fancy-video .video-btn {
+  width: 100%;
+  height: 100%;
+  max-width: 65px;
+  max-height: 65px;
+}
+.travel-blog-wrapper .fancy-video .video-btn i {
+  margin-top: 40%;
+}
+
+/* ANIMATION BEAT  */
+@keyframes beat {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
 }
 /*==================
 TRAVEL BLOG SECTION  STYLES END
@@ -868,7 +877,7 @@ LATEST BLOG SECTION  END
   display: block;
   margin: 0 auto;
   color: aliceblue;
-  background-color: black;
+  background-color: #1a1a1a;
 }
 .footer-top {
   width: 100%;
@@ -916,17 +925,26 @@ LATEST BLOG SECTION  END
 }
 .footer-social-wrapper a {
   display: inline-block;
-  margin: 5px 10px;
-}
-.footer-social-wrapper a i {
+  margin-right: 12px;
   font-size: 16px;
   color: #ffffff;
   padding: 12px;
   border-radius: 50%;
   background: #5f5f5f;
   transition: 0.3s ease;
+  width: 45px;
+  height: 45px;
+  text-align: center;
 }
-.footer-social-wrapper a:hover i {
+/* .footer-social-wrapper a i {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 50%;
+  background: #5f5f5f;
+  transition: 0.3s ease;
+} */
+.footer-social-wrapper a:hover {
   background-color: #ee5542;
   transform: rotate(360deg);
 }
